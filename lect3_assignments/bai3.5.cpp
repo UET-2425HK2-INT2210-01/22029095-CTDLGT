@@ -16,7 +16,7 @@ Algorithm Top(S):
         return "Stack is empty"
     return S.array[S.top]
 
-//–o phuc tap:
+//√êo phuc tap:
 Push(x): O(1)
 Pop(): O(1)
 Top(): O(1)
