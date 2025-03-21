@@ -1,0 +1,7 @@
+Hai tính chất quan trọng của một hàm băm là:
+
+Tính duy nhất (Collision Resistance):
+Hàm băm cần hạn chế tối đa khả năng xảy ra đụng độ (collision), tức là khi hai đầu vào khác nhau lại cho ra cùng một giá trị băm. Tính chất này rất quan trọng trong các ứng dụng liên quan đến bảo mật, chẳng hạn như chữ ký số hoặc mã hóa dữ liệu, để đảm bảo rằng mỗi dữ liệu đầu vào sẽ được biểu diễn bằng một giá trị băm duy nhất.
+
+Tính ngẫu nhiên và phân phối đều (Uniform Distribution):
+Giá trị băm phải được phân phối đều và ngẫu nhiên trên không gian đầu ra, bất kể đầu vào như thế nào. Điều này đảm bảo rằng dữ liệu không bị dồn vào một vùng nhất định trong không gian giá trị băm, giúp giảm thiểu xung đột và tăng hiệu suất trong các ứng dụng như bảng băm (hash table).
