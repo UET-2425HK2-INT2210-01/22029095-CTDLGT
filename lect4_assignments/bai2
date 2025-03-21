@@ -26,6 +26,7 @@ a. Dùng chaining
 8: Empty
 9:13
 10: Empty
+
 b. Dùng linear probing
 Xây dựng bằng băm:
 Lập qua từng key, kiểm tra và chèn
