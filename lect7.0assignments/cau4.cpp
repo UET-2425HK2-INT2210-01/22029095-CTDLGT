@@ -1,28 +1,29 @@
 #include <iostream>
-#include <cmath> // dùng cho abs
 using namespace std;
 
-// Hàm đệ quy để tính x lũy thừa n
-double luyThua(int coSo, int soMu) {
-    if (soMu == 0) return 1; // Bất kỳ số nào mũ 0 đều bằng 1
+// Hàm đệ quy để tính x mũ n
+double luyThua(int coSo, int mu) {
+    if (mu == 0) return 1;
 
-    double phanMu = luyThua(coSo, soMu / 2); // Đệ quy tính nửa mũ
+    double phanMu = luyThua(coSo, mu / 2);
 
-    if (soMu % 2 == 0) {
-        return phanMu * phanMu; // Nếu số mũ chẵn
-    } else {
-        return coSo * phanMu * phanMu; // Nếu số mũ lẻ
-    }
+    if (mu % 2 == 0)
+        return phanMu * phanMu;
+    else
+        return coSo * phanMu * phanMu;
 }
 
 int main() {
-    int coSoNhap, muNhap;
-    cin >> coSoNhap >> muNhap;
+    int coSo, mu;
+    cin >> coSo >> mu;
 
-    double ketQua = luyThua(coSoNhap, abs(muNhap)); // Lấy trị tuyệt đối nếu mũ âm
+    // Tính trị tuyệt đối của số mũ bằng tay (không dùng abs)
+    int muDuong = (mu < 0) ? -mu : mu;
 
-    if (muNhap < 0)
-        cout << 1.0 / ketQua << endl; // Nếu mũ âm thì lấy nghịch đảo
+    double ketQua = luyThua(coSo, muDuong);
+
+    if (mu < 0)
+        cout << 1.0 / ketQua << endl;
     else
         cout << ketQua << endl;
 
