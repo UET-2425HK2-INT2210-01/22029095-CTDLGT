@@ -1,0 +1,24 @@
+bai1:
+       <an xml tag> 
+/closetag>
+<with attribute=”77”>
+
+bai2:
+    abc
+abbbbbbbb
+abcbcbcbc 
+ac
+azccbbbbcbccc 
+
+bai3:
+       very very fat ugly man 
+very very very tall man 
+
+bai4:
+       ^.{3}\..{3}\..{3}\..{3}$
+
+bai5:
+       ^(\(?\d{3}\)?)[\s.-]?\d{3}[\s.-]?\d{4}$
+
+bai6:
+       ^[A-Za-z0-9]+([ \-_][A-Za-z0-9]+)*$
